@@ -1,0 +1,29 @@
+{
+  "name": "simple-ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "node ./scripts/dev_start.js",
+    "start-production": "node ./scripts/production_start.js",
+
+    "pull-source-code": "node ./scripts/pull_source_code.js",
+    "restart-server": "node ./scripts/restart_server.js",
+    "build-server": "node ./scripts/build_server.js",
+    "build-client": "node ./scripts/build_client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "morgan": "^1.10.0",
+    "njk": "^4.2.0",
+    "nunjucks": "^3.2.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sqlite3": "^5.0.11"
+  }
+}

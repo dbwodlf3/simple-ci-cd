@@ -1,0 +1,9 @@
+simple-ci-cd:
+  entrypoint: 
+    - node 
+    - /project/scripts/dev_start.js
+  image: node:latest
+  ports:
+    - 3322:3322
+  volumes:
+    - "../:/project"
