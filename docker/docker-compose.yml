@@ -10,3 +10,4 @@ services:
       - 3322:3322
     volumes:
       - "../:/project"
+      
