@@ -2,9 +2,9 @@ const path = require("path");
 
 
 const settings = {
-    hostname: "127.0.0.1",
+    hostname: "0.0.0.0",
     port: "3322",
-    projectRoot: path.resolve(path.dirname(path.dirname(__dirname))),
+    projectRoot: path.resolve(path.dirname(__dirname)),
     serverRoot: path.resolve(path.dirname(__dirname)),
     security : {
         shaKey: "simple-ci-cd",
@@ -20,11 +20,12 @@ const settings = {
     domains: {
         default: "localhust"
     },
+
     server: {
-        workingDirectory: "~",
-        serverDirectory: "",
-        clientDirectory: "",
-        dockerDirectory: "",
+        workingDirectory: "~"
+    },
+    client: {
+        workingDirectory: "~"
     }
 }
 

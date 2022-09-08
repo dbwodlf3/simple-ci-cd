@@ -2,12 +2,17 @@ const express = require("express");
 const passport = require("passport");
 const { pullSourceCode, restartServer, buildServer, buildClient } = require("./api");
 const { notLoginMiddleware, userMiddleware}  = require("./middleware");
+const settings = require("./settings");
 
 
 const router = express.Router();
 
 router.get('/', userMiddleware, (req,res)=>{
-	res.render("index.njk");
+	const context = {
+		settings: settings
+	}
+
+	res.render("index.njk", context);
 })
 
 router.get('/404', (req,res)=>{

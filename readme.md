@@ -1,6 +1,14 @@
 # What is this
 This is just ui interaction tool for traditional simple ci cd(with scripts).
 
+# Quick start
+```
+git clone https://github.com/dbwodlf3/simple-ci-cd.git
+cd simple-ci-cd
+npm i
+npm run start-dev
+```
+
 # How to use
 
 first you need to write some scripts and configure settings variables.

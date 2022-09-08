@@ -1,5 +1,9 @@
 html {
 	background-color: #fafafa;
+	font-family: 'Muli', sans-serif !important;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #6b6f82;
 }
 
 .card {
@@ -23,4 +27,77 @@ html {
 .max-width-1080 {
 	width: 100%;
 	max-width: 1080;
+}
+
+.label-1 {
+	font-size: .7em;
+}
+
+.text-2 {
+
+}
+
+.text-3 {
+
+}
+
+.card-1 {
+	padding: 16px 16px 16px 16px;
+	background:#fff; border:1px solid #dfdfdf; border-radius:4px;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.custom-button{
+	display:flex; padding:10px 15px 10px 15px; 
+	height:30px; 
+	box-sizing:border-box; 
+	align-items:center;
+	border:1px solid rgba(0,0,0,.12); font-size:.75em; box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05); background:#fff;
+	user-select:none; cursor:pointer;
+
+	transition: color, background 0.05s ease;
+  }
+  
+  .custom-button:hover{
+	color:white;
+	background:#6129a2;
+  }
+
+  .input-box {
+	padding: 16px;
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
+}
+
+.input-box:focus{
+	outline:none;
+	text-decoration: none !important;
+}
+
+.small-size {
+	font-size: .9em;
+	padding: 8px;
+  }
+
+.label-1 {
+	font-size: .7em;
+}
+
+.flex-center {
+	display:flex;
+	justify-content:center;
+}
+
+.click-item {
+	user-select: none;
+	cursor: pointer;
+}
+
+.select-none {
+	user-select: none;
 }

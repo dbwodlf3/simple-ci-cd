@@ -42,7 +42,6 @@ const passport_strategy = new passportLocalStrategy(passport_option,
 	(userId, userPw, done)=>{
 		console.log("TRY LOGIN!", userId, userPw);
 		if(userId == settings.security.userId && userPw == settings.security.userPw) {
-			console.log("로그인 성공, 다음은?");
 			return done(null, {userId: userId, userPw: userPw});
 		}
 
@@ -62,6 +61,6 @@ app.use(router);
 app.use('/static/js', express.static(path.join(settings.serverRoot, 'static', 'js'), {fallthrough: false}));
 app.use('/static/css', express.static(path.join(settings.serverRoot, 'static', 'css'), {fallthrough: false}));
 
-app.listen(settings.port, '0.0.0.0', ()=>{
+app.listen(settings.port, settings.hostname, ()=>{
 	console.log(`Server is running on ${settings.port} port`);
 });
