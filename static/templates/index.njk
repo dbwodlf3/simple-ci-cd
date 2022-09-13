@@ -26,6 +26,12 @@
               <div class="label-1">Port</div>
               <div> {{settings.port}} </div>
             </div>
+            <div>
+              <div class="label-1">Server Commit Hash</div>
+              <div> ... </div>
+              <div class="label-1">Server Commit Message</div>
+              <div> ... </div>
+            </div>
           </div>
         </div>
 
@@ -70,7 +76,7 @@
       <div style="display:flex; gap: 8px;">
 
         <div class="card-1 flex-column" style="flex-grow:1; gap:8px;">
-          <div>Project Settings</div>
+          <div>CI/CD Settings</div>
 
           <div>
             <div class="label-1">Auth ID & PW</div>
@@ -81,6 +87,11 @@
 
         <div class="card-1 flex-column" style="flex-grow:1; gap:8px;">
           <div>Server Settings</div>
+
+          <div>
+            <div class="label-1">Repository</div>
+            <div class="custom-button"> {{settings.server.repository}} </div>
+          </div>
 
           <div>
             <div class="label-1">Working Directory</div>
@@ -96,8 +107,20 @@
         <div class="card-1 flex-column" style="flex-grow:1; gap:8px;">
           <div>Client Settings</div>
 
-          <div class="label-1">{{settings.client.workingDirectory}}</div>
-          <div class="label-1">Build Script</div>
+          <div>
+            <div class="label-1">Repository</div>
+            <div class="custom-button"> {{settings.client.repository}} </div>
+          </div>
+
+          <div>
+            <div class="label-1">Working Directory</div>
+            <div class="custom-button"> {{settings.client.workingDirectory}} </div>
+          </div>
+
+          <div>
+            <div class="label-1">Scripts</div>
+            <div class="custom-button"> {{settings.client.workingDirectory}} </div>
+          </div>
 
           <div style="display:flex; justify-content:end;">
               <button-component label="변경"></button-component>

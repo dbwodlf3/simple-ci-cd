@@ -22,10 +22,12 @@ const settings = {
     },
 
     server: {
-        workingDirectory: "~"
+        workingDirectory: "~",
+        repository: ""
     },
     client: {
-        workingDirectory: "~"
+        workingDirectory: "~",
+        repository: ""
     }
 }
 
